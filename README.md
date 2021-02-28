@@ -10,6 +10,11 @@ construction and shouldn't be used in production environment yet.
 This lib is inspired by [rs/cors][2] and
 [AdhityaRamadhanus/fasthttpcors][3].
 
+## To-do
+
+- [ ] Improve documentation
+- [ ] Improve tests
+
 ## License
 
 This project code is in the public domain. See the [LICENSE file][4].
