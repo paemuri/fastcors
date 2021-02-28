@@ -4,11 +4,18 @@
 [![go.dev][badge-2-img]][badge-2-link]
 [![Go Report Card][badge-3-img]][badge-3-link]
 
-CORS middleware for [fasthttp][1] server.
+CORS middleware for [fasthttp][1] server. This project is under
+construction and shouldn't be used in production environment yet.
+
+This lib is inspired by [rs/cors][2] and
+[AdhityaRamadhanus/fasthttpcors][3].
 
 ## License
 
-This project code is in the public domain. See the [LICENSE file][2].
+This project code is in the public domain. See the [LICENSE file][4].
+
+The only exception is the `lib/` folder:
+- `lib/cors/` contains code from [rs/cors][2] and its license.
 
 ### Contribution
 
@@ -17,7 +24,9 @@ submitted for inclusion in the work by you shall be in the public
 domain, without any additional terms or conditions.
 
 [1]: https://github.com/valyala/fasthttp
-[2]: ./LICENSE
+[2]: https://github.com/rs/cors/
+[3]: https://github.com/AdhityaRamadhanus/fasthttpcors
+[4]: ./LICENSE
 
 [badge-1-img]: https://img.shields.io/github/license/Nhanderu/fastcors?style=flat-square
 [badge-1-link]: https://github.com/Nhanderu/fastcors/blob/master/LICENSE
