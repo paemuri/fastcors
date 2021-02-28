@@ -197,7 +197,7 @@ func New(opts ...func(*Options)) RequestMiddleware {
 			fasthttp.HeaderXRequestedWith: {},
 		}
 	} else {
-		mw.allowedMethods = make(map[string]struct{}, len(options.AllowedHeaders))
+		mw.allowedHeaders = make(map[string]struct{}, len(options.AllowedHeaders))
 		for _, header := range options.AllowedHeaders {
 			if header == "*" {
 				mw.allowedHeadersAll = true

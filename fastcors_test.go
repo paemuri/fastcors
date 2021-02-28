@@ -93,10 +93,6 @@ func TestSetDebug(t *testing.T) {
 	}
 }
 
-type testLogger struct{}
-
-func (*testLogger) Printf(string, ...interface{}) {}
-
 func TestSetLogger(t *testing.T) {
 	opt := &Options{}
 	logger := &testLogger{}
@@ -125,3 +121,96 @@ func TestAllowAll(t *testing.T) {
 		t.Errorf("expected all headers got %v", opt.AllowedHeaders)
 	}
 }
+
+func TestNew_WithSetAllowedOrigins(t *testing.T) {
+	New(SetAllowedOrigins([]string{"https://localhost"}))
+}
+
+func TestNew_WithSetAllowOriginFunc(t *testing.T) {
+	New(SetAllowOriginFunc(func(origin string) bool {
+		return true
+	}))
+}
+
+func TestNew_WithSetAllowOriginRequestFunc(t *testing.T) {
+	New(SetAllowOriginRequestFunc(func(ctx *fasthttp.RequestCtx, origin string) bool {
+		return true
+	}))
+}
+
+func TestNew_WithSetAllowedMethods(t *testing.T) {
+	New(SetAllowedMethods([]string{
+		fasthttp.MethodGet,
+		fasthttp.MethodPost,
+	}))
+}
+
+func TestNew_WithSetAllowedHeaders(t *testing.T) {
+	New(SetAllowedHeaders([]string{
+		fasthttp.HeaderOrigin,
+		fasthttp.HeaderContentType,
+		fasthttp.HeaderAccept,
+	}))
+}
+
+func TestNew_WithSetExposedHeaders(t *testing.T) {
+	New(SetExposedHeaders([]string{
+		fasthttp.HeaderOrigin,
+		fasthttp.HeaderContentType,
+		fasthttp.HeaderAccept,
+	}))
+}
+
+func TestNew_WithSetMaxAge(t *testing.T) {
+	New(SetMaxAge(60 * 60 * 24 * 30))
+}
+
+func TestNew_WithSetAllowCredentials(t *testing.T) {
+	New(SetAllowCredentials(true))
+}
+
+func TestNew_WithSetDebug(t *testing.T) {
+	New(SetDebug(true))
+}
+
+func TestNew_WithSetLogger(t *testing.T) {
+	New(SetLogger(&testLogger{}))
+}
+
+func TestNew_WithAllowAll(t *testing.T) {
+	New(AllowAll())
+}
+
+func TestNew_WithAllOptions(t *testing.T) {
+	New(
+		SetAllowedOrigins([]string{"https://localhost"}),
+		SetAllowOriginFunc(func(origin string) bool {
+			return true
+		}),
+		SetAllowOriginRequestFunc(func(ctx *fasthttp.RequestCtx, origin string) bool {
+			return true
+		}),
+		SetAllowedMethods([]string{
+			fasthttp.MethodGet,
+			fasthttp.MethodPost,
+		}),
+		SetAllowedHeaders([]string{
+			fasthttp.HeaderOrigin,
+			fasthttp.HeaderContentType,
+			fasthttp.HeaderAccept,
+		}),
+		SetExposedHeaders([]string{
+			fasthttp.HeaderOrigin,
+			fasthttp.HeaderContentType,
+			fasthttp.HeaderAccept,
+		}),
+		SetMaxAge(60*60*24*30),
+		SetAllowCredentials(true),
+		SetDebug(true),
+		SetLogger(&testLogger{}),
+	)
+}
+
+type testLogger struct{}
+
+func (*testLogger) Printf(string, ...interface{}) {}
