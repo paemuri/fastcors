@@ -1,4 +1,4 @@
-module github.com/Nhanderu/fastcors
+module github.com/paemuri/fastcors
 
 go 1.14
 

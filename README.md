@@ -33,10 +33,10 @@ domain, without any additional terms or conditions.
 [3]: https://github.com/AdhityaRamadhanus/fasthttpcors
 [4]: ./LICENSE
 
-[badge-1-img]: https://img.shields.io/github/license/Nhanderu/fastcors?style=flat-square
-[badge-1-link]: https://github.com/Nhanderu/fastcors/blob/master/LICENSE
+[badge-1-img]: https://img.shields.io/github/license/paemuri/fastcors?style=flat-square
+[badge-1-link]: https://github.com/paemuri/fastcors/blob/master/LICENSE
 [badge-2-img]: https://img.shields.io/badge/go.dev-reference-007d9c?style=flat-square&logo=go&logoColor=white
-[badge-2-link]: https://pkg.go.dev/github.com/Nhanderu/fastcors
-[badge-3-img]: https://goreportcard.com/badge/github.com/Nhanderu/fastcors?style=flat-square
-[badge-3-link]: https://goreportcard.com/report/github.com/Nhanderu/fastcors
+[badge-2-link]: https://pkg.go.dev/github.com/paemuri/fastcors
+[badge-3-img]: https://goreportcard.com/badge/github.com/paemuri/fastcors?style=flat-square
+[badge-3-link]: https://goreportcard.com/report/github.com/paemuri/fastcors
 

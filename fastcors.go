@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Nhanderu/fastcors/lib/cors"
+	"github.com/paemuri/fastcors/lib/cors"
 	"github.com/valyala/fasthttp"
 )
 
