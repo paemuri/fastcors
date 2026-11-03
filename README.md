@@ -15,28 +15,41 @@ This lib is inspired by [rs/cors][2] and
 - [ ] Improve documentation
 - [ ] Improve tests
 
-## License
+## Source code
 
-This project code is in the public domain. See the [LICENSE file][4].
+The main repository is on [GitHub][source-github].
 
-The only exception is the `lib/` folder:
-- `lib/cors/` contains code from [rs/cors][2] and its license.
+## License and contribution
 
-### Contribution
+All original code is licensed under the
+[Mozilla Public License 2.0][license-code].
 
-Unless you explicitly state otherwise, any contribution intentionally
-submitted for inclusion in the work by you shall be in the public
-domain, without any additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you shall be licensed under the same license as
+the material to which it is contributed, without any additional terms or
+conditions.
+
+### License history
+
+Starting with v1.0.0, this project is licensed under MPL-2.0
+
+### Third-party and exceptions
+
+The `lib/cors/` folder contains code from [rs/cors][2], licensed under the MIT
+License. See `lib/cors/LICENSE`.
 
 [1]: https://github.com/valyala/fasthttp
 [2]: https://github.com/rs/cors/
 [3]: https://github.com/AdhityaRamadhanus/fasthttpcors
-[4]: ./LICENSE
 
-[badge-1-img]: https://img.shields.io/github/license/paemuri/fastcors?style=flat-square
-[badge-1-link]: https://github.com/paemuri/fastcors/blob/master/LICENSE
+[badge-1-img]: https://img.shields.io/badge/license-MPL--2.0-green?style=flat-square
+[badge-1-link]: ./LICENSE
 [badge-2-img]: https://img.shields.io/badge/go.dev-reference-007d9c?style=flat-square&logo=go&logoColor=white
 [badge-2-link]: https://pkg.go.dev/github.com/paemuri/fastcors
 [badge-3-img]: https://goreportcard.com/badge/github.com/paemuri/fastcors?style=flat-square
 [badge-3-link]: https://goreportcard.com/report/github.com/paemuri/fastcors
+
+[source-github]: https://github.com/paemuri/fastcors
+
+[license-code]: ./LICENSES/MPL-2.0.txt
 
