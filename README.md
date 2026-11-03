@@ -4,8 +4,7 @@
 [![go.dev][badge-2-img]][badge-2-link]
 [![Go Report Card][badge-3-img]][badge-3-link]
 
-CORS middleware for [fasthttp][1] server. This project is under
-construction and shouldn't be used in production environment yet.
+CORS middleware for [fasthttp][1] server.
 
 This lib is inspired by [rs/cors][2] and
 [AdhityaRamadhanus/fasthttpcors][3].
@@ -17,7 +16,9 @@ This lib is inspired by [rs/cors][2] and
 
 ## Source code
 
-The main repository is on [GitHub][source-github].
+The main repository is on [SourceHut][source-srht]. Mirrors exist on
+[Codeberg][source-codeberg] and [GitHub][source-github] for convenience, but
+they might occasionally be outdated.
 
 ## License and contribution
 
@@ -49,6 +50,8 @@ License. See `lib/cors/LICENSE`.
 [badge-3-img]: https://goreportcard.com/badge/github.com/paemuri/fastcors?style=flat-square
 [badge-3-link]: https://goreportcard.com/report/github.com/paemuri/fastcors
 
+[source-srht]: https://git.sr.ht/~paemuri/fastcors
+[source-codeberg]: https://codeberg.org/paemuri/fastcors
 [source-github]: https://github.com/paemuri/fastcors
 
 [license-code]: ./LICENSES/MPL-2.0.txt
