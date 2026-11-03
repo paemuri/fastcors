@@ -32,7 +32,7 @@ conditions.
 
 ### License history
 
-Starting with v1.0.0, this project is licensed under MPL-2.0
+Starting with v1.0.0, this project is licensed under MPL-2.0.
 
 ### Third-party and exceptions
 
