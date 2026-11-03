@@ -1,4 +1,4 @@
-module github.com/paemuri/fastcors
+module git.sr.ht/~paemuri/fastcors
 
 go 1.14
 

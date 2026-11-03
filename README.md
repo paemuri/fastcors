@@ -2,7 +2,6 @@
 
 [![License][badge-1-img]][badge-1-link]
 [![go.dev][badge-2-img]][badge-2-link]
-[![Go Report Card][badge-3-img]][badge-3-link]
 
 CORS middleware for [fasthttp][1] server.
 
@@ -46,9 +45,7 @@ License. See `lib/cors/LICENSE`.
 [badge-1-img]: https://img.shields.io/badge/license-MPL--2.0-green?style=flat-square
 [badge-1-link]: ./LICENSE
 [badge-2-img]: https://img.shields.io/badge/go.dev-reference-007d9c?style=flat-square&logo=go&logoColor=white
-[badge-2-link]: https://pkg.go.dev/github.com/paemuri/fastcors
-[badge-3-img]: https://goreportcard.com/badge/github.com/paemuri/fastcors?style=flat-square
-[badge-3-link]: https://goreportcard.com/report/github.com/paemuri/fastcors
+[badge-2-link]: https://pkg.go.dev/git.sr.ht/~paemuri/fastcors
 
 [source-srht]: https://git.sr.ht/~paemuri/fastcors
 [source-codeberg]: https://codeberg.org/paemuri/fastcors
